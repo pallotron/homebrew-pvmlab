@@ -3,11 +3,13 @@ class Pvmlab < Formula
   homepage "https://github.com/pallotron/pvmlab"
   license "Apache-2.0"
 
-  version "0.1.0" # This will be replaced by actual release tag in CI
+  version "0.0.5"
 
   # Adjust this URL and SHA256 for each release
   url "https://github.com/pallotron/pvmlab/archive/refs/tags/v#{version}.tar.gz"
-  sha256 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855" # Dummy SHA, replace with actual for release
+  # To find the SHA256 for a new version, run:
+  # curl -L -s https://github.com/pallotron/pvmlab/archive/refs/tags/v#{version}.tar.gz | shasum -a 256
+  sha256 "b1a38000d16ce6d0c9cd009d5687cb419776e7e8825602a919252e7c01cb7711"
 
   depends_on "go" => :build
   depends_on "qemu"
