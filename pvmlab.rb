@@ -27,7 +27,7 @@ class Pvmlab < Formula
     prefix.install "launchd/io.github.pallotron.pvmlab.socket_vmnet.plist"
 
     # Generate and install shell completions
-    generate_completions_from_executable(bin/"pvmlab", "completion", "bash", "zsh")
+    generate_completions_from_executable(bin/"pvmlab", "completion", shells: [:bash, :zsh])
   end
 
   def caveats
