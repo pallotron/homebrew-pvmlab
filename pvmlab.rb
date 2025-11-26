@@ -3,7 +3,7 @@ class Pvmlab < Formula
   homepage "https://github.com/pallotron/pvmlab"
   license "Apache-2.0"
 
-  version "0.0.5"
+  version "0.0.6"
 
   # Adjust this URL and SHA256 for each release
   url "https://github.com/pallotron/pvmlab/archive/refs/tags/v#{version}.tar.gz"
